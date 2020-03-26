@@ -6,11 +6,11 @@ import star from '../../assets/mario-star.png'
 
 const Navbar = () => {
     return (
-        <nav class="nav-wrapper grey darken-3">
+        <nav className="nav-wrapper grey darken-3">
             <div className="container">
                 <div className="container">
                     <Link to='/' className="brand-logo">
-                        <img id="star" class="materialboxed" src={star} alt="Mario Star"/>
+                        <img id="star" className="materialboxed" src={star} alt="Mario Star"/>
                         MarioPlan
                     </Link>
                     <SignedInLinks/>
