@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import SignedInLinks from './SignedInLinks'
 import SignedOutLinks from './SignedOutLinks'
-import star from '../../assets/mario-star.png'
+import starImg from '../../assets/mario-star.png'
 
 const Navbar = () => {
     return (
@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="container">
                     <Link to='/' className="brand-logo">
-                        <img id="star" className="materialboxed" src={star} alt="Mario Star"/>
+                        <img id="star" className="materialboxed" src={starImg} alt="Mario Star"/>
                         MarioPlan
                     </Link>
                     <SignedInLinks/>
