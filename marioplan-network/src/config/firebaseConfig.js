@@ -3,7 +3,7 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
+export var firebaseConfig = {
     apiKey: "AIzaSyCFKTKZ0sZdA8_UrTuQGXPz4qivt7OkCR0",
     authDomain: "marioplan-network.firebaseapp.com",
     databaseURL: "https://marioplan-network.firebaseio.com",
@@ -15,7 +15,7 @@ var firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.firestore().settings({timeStampsInSnapshots: true})
+firebase.initializeApp(firebaseConfig)
+firebase.firestore()
 
 export default firebase
