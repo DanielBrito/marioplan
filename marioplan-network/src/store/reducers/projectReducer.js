@@ -1,23 +1,16 @@
-const initState = {
-    projects: [
-        {id: '1', title: 'help me find princess peach', content: 'she is in browser\'s castle'},
-        {id: '2', title: 'collect all the stars', content: 'some of them are hidden'},
-        {id: '3', title: 'egg hunt with yoshi', content: 'in the fields of Hyrule'}
-    ]
-}
+const initState = {}
 
 const projectReducer = (state = initState, action) => {
-
-    switch(action.type){
-        case 'CREATE_PROJECT': 
-            console.log('Created project: ', action.project);
-            return state
+    switch (action.type) {
+        case 'CREATE_PROJECT_SUCCESS':
+            console.log('create project success');
+            return state;
         case 'CREATE_PROJECT_ERROR':
-            console.log('Create project error: ', action.error);
-            return state
+            console.log('create project error');
+            return state;
         default:
-            return state
+            return state;
     }
-}
+};
 
-export default projectReducer
+export default projectReducer;
