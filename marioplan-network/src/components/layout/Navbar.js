@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <nav className="nav-wrapper red darken-2">
             <div className="container">
-                <div className="container">
+                <div id="nav-item" className="container">
                     <Link to='/' className="brand-logo">
                         <img id="star" className="materialboxed" src={starImg} alt="Mario Star"/>
                         MarioPlan

@@ -41,6 +41,28 @@ textarea.materialize-textarea:focus:not([readonly]){
     vertical-align: text-bottom;
 }
 
+#signIn{
+    max-width: 500px;
+}
+
+.nav-item{
+    font-weight: bold;
+}
+
+#nav-item{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.white.center{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .card.z-depth-0.project-summary{
     border-radius: 10px;
+}
+
+.login-status{
+    font-weight: bold;
 }
