@@ -25,9 +25,7 @@ const Navbar = () => {
 
 const mapStateToProps = (state) => {
     console.log(state)
-    return [
-        
-    ]
+    return state
 }
 
 export default connect(
