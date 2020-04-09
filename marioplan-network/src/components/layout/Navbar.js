@@ -5,7 +5,9 @@ import SignedOutLinks from './SignedOutLinks'
 import {connect} from 'react-redux'
 import starImg from '../../assets/mario-star.png'
 
-const Navbar = () => {
+const Navbar = (props) => {
+    const {auth} = props
+    const links = auth.uid ? <SignedInLinks/> : <SignedOutLinks/>
     return (
         <nav className="nav-wrapper red darken-2">
             <div className="container">
@@ -14,8 +16,7 @@ const Navbar = () => {
                         <img id="star" className="materialboxed" src={starImg} alt="Mario Star"/>
                         MarioPlan
                     </Link>
-                    <SignedInLinks/>
-                    <SignedOutLinks/>
+                    {links}
                 </div>
             </div>
         </nav>
@@ -24,8 +25,9 @@ const Navbar = () => {
 }
 
 const mapStateToProps = (state) => {
-    console.log(state)
-    return state
+    return {
+        auth: state.firebase.auth
+    }
 }
 
 export default connect(

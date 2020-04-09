@@ -21,8 +21,8 @@ class SignUp extends Component {
     
     render() {
         return (
-            <div className="container">
-                <form className="white" onSubmit={this.handleSubmit}>
+            <div id="signUp" className="container center">
+                <form className="white center" onSubmit={this.handleSubmit}>
                     <h5 className="grey-text text-darken-3">Sign Up</h5>
                     <div className="input-field">
                         <label htmlFor="email">Email</label>

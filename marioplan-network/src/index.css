@@ -45,6 +45,10 @@ textarea.materialize-textarea:focus:not([readonly]){
     max-width: 500px;
 }
 
+#signUp{
+    max-width: 500px;
+}
+
 .nav-item{
     font-weight: bold;
 }
