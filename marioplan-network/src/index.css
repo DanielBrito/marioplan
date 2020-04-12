@@ -41,19 +41,7 @@ textarea.materialize-textarea:focus:not([readonly]){
     vertical-align: text-bottom;
 }
 
-#signIn{
-    max-width: 500px;
-}
-
-#signUp{
-    max-width: 500px;
-}
-
-#create-project{
-    max-width: 500px;
-}
-
-#project-detail{
+#signIn, #signUp, #create-project, #project-detail{
     max-width: 500px;
 }
 
@@ -79,6 +67,6 @@ textarea.materialize-textarea:focus:not([readonly]){
     border-radius: 10px;
 }
 
-.login-status{
+.login-status, .signup-status{
     font-weight: bold;
 }
