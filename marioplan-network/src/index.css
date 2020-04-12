@@ -49,6 +49,18 @@ textarea.materialize-textarea:focus:not([readonly]){
     max-width: 500px;
 }
 
+#create-project{
+    max-width: 500px;
+}
+
+#project-detail{
+    max-width: 500px;
+}
+
+#project-card{
+    border-radius: 10px;
+}
+
 .nav-item{
     font-weight: bold;
 }
