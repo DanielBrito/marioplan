@@ -45,7 +45,7 @@ textarea.materialize-textarea:focus:not([readonly]){
     max-width: 500px;
 }
 
-#project-card{
+#project-card, #notification-section{
     border-radius: 10px;
 }
 
@@ -67,6 +67,6 @@ textarea.materialize-textarea:focus:not([readonly]){
     border-radius: 10px;
 }
 
-.login-status, .signup-status{
+.login-status, .signup-status, .card-title{
     font-weight: bold;
 }
