@@ -3,6 +3,11 @@ import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 
 class SignUp extends Component {
+    constructor(props) {
+        super(props);
+        document.title = "Sign Up";
+    }
+
     state = {
         email: '',
         password: '',

@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
-import {connect} from 'react-redux'
-import {signIn} from '../../store/actions/authActions'
+import { connect } from 'react-redux'
+import { signIn } from '../../store/actions/authActions'
 import { Redirect } from 'react-router-dom'
 
 class SignIn extends Component {
+    constructor(props) {
+        super(props);
+        document.title = "Sign In";
+    }
+    
     state = {
         email: '',
         password: ''
@@ -21,7 +26,7 @@ class SignIn extends Component {
     }
 
     render() {
-        const {authError, auth} = this.props
+        const { authError, auth } = this.props
         if (auth.uid) return <Redirect to='/' />
 
         return (
@@ -49,14 +54,14 @@ class SignIn extends Component {
 }
 
 const mapStateToProps = (state) => {
-    return{
+    return {
         authError: state.auth.authError,
         auth: state.firebase.auth
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
-    return{
+    return {
         signIn: (credentials) => dispatch(signIn(credentials))
     }
 }

@@ -4,6 +4,11 @@ import { createProject } from '../../store/actions/projectActions'
 import { Redirect } from 'react-router-dom'
 
 class CreateProject extends Component {
+    constructor(props) {
+        super(props);
+        document.title = "Create Project";
+    }
+
     state = {
         title: '',
         content: ''

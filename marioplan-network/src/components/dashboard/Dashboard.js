@@ -7,10 +7,13 @@ import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
 
 class Dashboard extends Component {
+    constructor(props) {
+        super(props);
+        document.title = "Dashboard";
+    }
+
     render() {
-
         const { projects, auth } = this.props;
-
         if(!auth.uid) return <Redirect to='/signin'/>
 
         return (

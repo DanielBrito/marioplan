@@ -1,10 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { connect } from 'react-redux'
 import { firestoreConnect } from 'react-redux-firebase'
 import { compose } from 'redux'
 import { Redirect } from 'react-router-dom'
 
 const ProjectDetails = (props) => {
+
+    useEffect(() => {
+        document.title = "Project Details";
+    });
+
     const { project, auth } = props
     if (!auth.uid) return <Redirect to='/signin' />
 
