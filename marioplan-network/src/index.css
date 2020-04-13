@@ -49,6 +49,10 @@ textarea.materialize-textarea:focus:not([readonly]){
     border-radius: 10px;
 }
 
+#notifications-container{
+    max-width: 350px;
+}
+
 .nav-item{
     font-weight: bold;
 }
