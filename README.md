@@ -1,6 +1,6 @@
 # :star: Marioplan
 
-First contact with ReactJS and Firebase.
+First contact with ReactJS, Redux and Firebase.
 
 ## :round_pushpin: Available at:
 
